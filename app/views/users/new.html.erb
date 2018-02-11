@@ -1,0 +1,42 @@
+<h1>New User</h1>
+
+<%= form_for @user do |f| %>
+
+  <div class="field">
+    <%= f.label 'User Name' %><br>
+    <%= f.text_field :name, id: 'user[name]' %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Password' %><br>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Height in Inches' %><br>
+    <%= f.number_field :height %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Happiness' %><br>
+    <%= f.text_field :happiness %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Nausea' %><br>
+    <%= f.text_field :nausea %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Number of Tickets' %><br>
+    <%= f.number_field :tickets %><br>
+  </div>
+
+  <div class="field">
+    <%= f.label 'ADMIN?' %><br>
+    <%= f.check_box :admin %><br>
+  </div>
+
+  <div class="field"><%= f.submit %></div>
+
+<% end %>

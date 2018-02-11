@@ -1,0 +1,16 @@
+<h1><%= @user.name %></h1>
+<% if @user.admin %>
+<h2>ADMIN USER</h2>
+<% end %>
+<p> <%= @message %> </p>
+<h3>Mood:</h3>
+<p><%= @user.mood %></p>
+<h3>Nausea:</h3>
+<p><%= @user.nausea %></p>
+<h3>Height:</h3>
+<p><%= @user.height %> inches</p>
+<h3>Tickets:</h3>
+<p><%= @user.tickets %> tickets</p>
+<br>
+<h3>Go on a  Ride</h3>
+<p><a href="/attractions">See attractions</a></p>
